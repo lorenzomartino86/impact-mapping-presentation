@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Pipeline App in Test Environment</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="../css/reveal.css">
+	<link rel="stylesheet" href="../css/theme/black.css" id="theme">
+
+	<link rel="stylesheet" href="../lib/css/zenburn.css">
+
+	<link id="favicon" rel="shortcut icon" href="favicon.ico" />
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<div class="slides">
+
+			<!-- Welcoming introduction -->
+			<section data-background="img/background-geometric.jpg">
+				<section class="landing">
+					<div class="introText">
+						<h1>Pipeline App in Test</h1>
+						<h1><strong>Deployment Strategy in Test Environment</strong></h1>
+						<h2>Developed by Lorenzo Martino & Ger Moran</h2>
+					</div>
+				</section>
+				<section class="landing">
+					<div class="introText">
+						<h1>Who are we?</h1>
+					</div>
+				</section>
+				<section class="landing">
+					<div class="introText agenda">
+						<h1>Agenda</h1>
+						<ul>
+							<li>Introduction on Pipeline in test</li>
+						</ul>
+						<hr>
+						<ul>
+							<li>Deploy pipeline with Kubernetes in test environment</li>
+							<li>Demo</li>
+						</ul>
+						<hr>
+						<ul>
+							<li>Final Thoughts</li>
+						</ul>
+						<hr>
+						<ul>
+							<li>Q&A</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="../lib/js/head.min.js"></script>
+	<script src="../js/reveal.js"></script>
+
+	<script>
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: false,
+			// Optional libraries used to extend on reveal.js
+			dependencies: [
+				{ src: '../lib/js/classList.js', condition: function () { return !document.body.classList; } },
+				{ src: '../plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: '../plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: '../plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: '../plugin/notes/notes.js' }
+			]
+		});
+	</script>
+
+</body>
+
+</html>
